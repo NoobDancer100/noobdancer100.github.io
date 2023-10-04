@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #444; /* Darker grey background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center everything vertically */
+    margin: 0;
+}
+
+#chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    width: 80%; /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for chat box */
+    border-radius: 10px; /* Rounded corners for chat box */
+}
+
+#message-input {
+    border: none; /* Remove border from input */
+    padding: 10px;
+    width: 80%; /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for input */
+    border-radius: 10px; /* Rounded corners for input */
+    margin-top: 10px;
+    outline: none; /* Remove input outline on focus */
+}
+
+.message {
+    font-family: 'Roboto', sans-serif;
+}
+
+.message .name-you {
+    color: rgb(129, 218, 56);
+    font-weight: bold;
+    display: inline;
+}
+
+.message .name-server {
+    color: rgb(56, 72, 218);
+    font-weight: bold;
+    display: inline;
+}
