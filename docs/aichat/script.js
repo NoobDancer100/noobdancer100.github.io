@@ -7,7 +7,7 @@ const socket = new WebSocket('wss://ttscrdlv-8080.usw3.devtunnels.ms/');
 // Event listener for when the WebSocket connection is opened
 socket.addEventListener('open', (event) => {
     socket.send(JSON.stringify({clientType: "User"}));
-    chatBox.innerHTML += '<div>Connected to the server.</div>';
+    chatBox.innerHTML += '<div>Connected to the AI NameServer.</div>';
 });
 
 // Event listener for incoming messages from the server
