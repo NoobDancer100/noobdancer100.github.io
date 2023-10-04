@@ -1,2 +1,2 @@
-# NoobDancer100.github.io
-This is open so you can see how trash my code is :)
+# NoobDancer100's GitHub Pages
+This is the stuff for my website
