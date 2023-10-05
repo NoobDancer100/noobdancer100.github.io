@@ -41,7 +41,6 @@ messageInput.addEventListener('keyup', (event) => {
             chatBox.innerHTML += `<div class="message"><div class="name-you">You: </div>${messageText}</div>`;
             
             // Clear the input field
-            messageInput.disabled = true;
             messageInput.value = '';
         }
     }
