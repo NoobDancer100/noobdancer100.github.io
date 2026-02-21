@@ -11,18 +11,17 @@ import type { AppStartup, DesktopIconData } from "./types";
 
 // WINDOWS
 import Welcome from "./windows/Welcome.vue";
-import Rickroll from "./windows/Rickroll.vue";
 
 const activeApps: Array<AppStartup> = reactive([]);
 
 const desktop_icons: DesktopIconData[] = [
   {
-    name: "Rickroll",
+    name: "Welcome",
     icon: icons.ThisPC!,
     app: {
       icon: icons.ThisPC!,
-      title: 'Rickroll',
-      window: Rickroll
+      title: 'Welcome',
+      window: Welcome
     }
   }
 ];
