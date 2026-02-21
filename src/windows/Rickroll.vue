@@ -1,0 +1,11 @@
+<script lang="ts">
+
+</script>
+
+<template>
+    <iframe width="920" height="517" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</template>
+
+<style scoped lang="scss">
+
+</style>
