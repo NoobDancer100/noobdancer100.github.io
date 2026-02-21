@@ -58,6 +58,8 @@ onBeforeUnmount(() => {
 
 <style lang="scss">
 .window {
+  position: absolute;
+
   border: 1px solid blue;
   border-radius: 5px 5px 0px 0px;
 
