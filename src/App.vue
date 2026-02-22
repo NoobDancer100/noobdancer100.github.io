@@ -11,6 +11,8 @@ import type { AppStartup, DesktopIconData } from "./types";
 
 // WINDOWS
 import Welcome from "./windows/Welcome.vue";
+import Links from "./windows/Links.vue";
+import Projects from "./windows/Projects.vue";
 
 const activeApps: Array<AppStartup> = reactive([]);
 
@@ -26,7 +28,21 @@ const desktop_icons: DesktopIconData[] = [
   },
   {
     name: 'Links',
-    icon: icons.App!
+    icon: icons.Links!,
+    app: {
+      icon: icons.Links!,
+      title: 'Links',
+      window: Links
+    }
+  },
+  {
+    name: 'Projects',
+    icon: icons.Projects!,
+    app: {
+      icon: icons.Projects!,
+      title: 'Projects',
+      window: Projects
+    }
   }
 ];
 
