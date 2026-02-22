@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
   >
     <div class="titlebar" @mousedown="onMouseDown">
       <img :src="icon" v-if="icon">
-      <img v-else src="/src/assets/icons/ThisPC.png" />
+      <img v-else src="/src/assets/icons/App.ico" />
       <p>{{ title }}</p>
       <button @click="() => emit('window-close')">X</button>
     </div>
@@ -60,18 +60,21 @@ onBeforeUnmount(() => {
 .window {
   position: absolute;
 
-  border: 1px solid blue;
+  border: 1px solid #303030;
   border-radius: 5px 5px 0px 0px;
 
-  min-width: 450px;
-  width: fit-content;
+  display: inline-block; // shrink-wrap content
+  vertical-align: top;    // optional
+  min-width: 200px;       // optional
+
+  max-width: max-content; // <-- key: window grows to fit widest content
 }
 
 .titlebar {
   cursor: grab;
   user-select: none;
 
-  background-color: blue;
+  background-color: #303030;
   color: white;
 
   padding: 5px;
@@ -111,8 +114,13 @@ onBeforeUnmount(() => {
 }
 
 .content {
-  padding: 12px;
-
   background-color: #fefefe;
+
+  box-sizing: border-box;
+
+  * {
+  max-width: 100%;
+  overflow-wrap: break-word; // prevent very long words from stretching
+}
 }
 </style>

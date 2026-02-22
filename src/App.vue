@@ -17,12 +17,16 @@ const activeApps: Array<AppStartup> = reactive([]);
 const desktop_icons: DesktopIconData[] = [
   {
     name: "Welcome",
-    icon: icons.ThisPC!,
+    icon: icons.App!,
     app: {
-      icon: icons.ThisPC!,
+      icon: icons.App!,
       title: 'Welcome',
       window: Welcome
     }
+  },
+  {
+    name: 'Links',
+    icon: icons.App!
   }
 ];
 
@@ -59,7 +63,7 @@ onMounted(() => {
     <div class="taskbar">
       <div class="task-icon" v-for="data in activeApps">
         <img :src="data.icon" v-if="data.icon">
-        <img src="/src/assets/icons/ThisPC.png" v-else>
+        <img src="/src/assets/icons/App.ico" v-else>
       </div>
     </div>
   </div>
@@ -90,9 +94,7 @@ onMounted(() => {
   grid-template-rows: 1fr 50px;
 
   .desktop {
-    background-image: url("./assets/background.webp");
-    background-size: cover;
-    background-position: center;
+    background-color: #6b6b6b;
     padding: 10px;
 
     display: grid;
@@ -117,8 +119,13 @@ onMounted(() => {
     justify-content: center;
 
     .task-icon {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
       img {
-        height: 40px;
+        height: 30px;
       }
 
       border-radius: 100%;
